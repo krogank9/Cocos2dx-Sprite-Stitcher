@@ -21,8 +21,8 @@ Imagemagick, bash, etc1tool from android sdk
 
 #SpriteStitch class usage:
 1. Initialize a SpriteStitch object from the output of png2stitch:
--node = SpriteStitch::createFromFolder("level1", true);
+*node = SpriteStitch::createFromFolder("level1", true);
 
 2. Just create a ETC1 compressed sprite with alpha:
--sprite = SpriteStitch::createETCASprite("Sprite.pkm", "Sprite_alpha.pkm");
--First arguement is the sprite's pkm image file, the second is the sprite's alpha mask (created with png2etc_a)
+*sprite = SpriteStitch::createETCASprite("Sprite.pkm", "Sprite_alpha.pkm");
+*First arguement is the sprite's pkm image file, the second is the sprite's alpha mask (created with png2etc_a)
