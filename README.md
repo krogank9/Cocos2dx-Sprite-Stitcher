@@ -16,13 +16,13 @@ Imagemagick, bash, etc1tool from android sdk
 3. png2stitch_a image_name.png // same as png_stitch but each tile also comes with an alpha map 
 
 #Download Cocos2d-x project files:
--shaders/ folder, place this in your Cocos2d-x project's Resources/ directory
--SpriteStitch.cpp use this class inside your Cocos2d-x project to obtain a SpriteStitch node
+1. shaders/ folder, place this in your Cocos2d-x project's Resources/ directory
+2. SpriteStitch.cpp use this class inside your Cocos2d-x project to obtain a SpriteStitch node
 
 #SpriteStitch class usage:
-Initialize a SpriteStitch object from the output of png2stitch:
-node = SpriteStitch::createFromFolder("level1", true);
+1. Initialize a SpriteStitch object from the output of png2stitch:
+-node = SpriteStitch::createFromFolder("level1", true);
 
-Just create a ETC1 compressed sprite with alpha:
-sprite = SpriteStitch::createETCASprite("Sprite.pkm", "Sprite_alpha.pkm");
-First arguement is the sprite's pkm image file, the second is the sprite's alpha mask (created with png2etc_a)
+2. Just create a ETC1 compressed sprite with alpha:
+-sprite = SpriteStitch::createETCASprite("Sprite.pkm", "Sprite_alpha.pkm");
+-First arguement is the sprite's pkm image file, the second is the sprite's alpha mask (created with png2etc_a)
