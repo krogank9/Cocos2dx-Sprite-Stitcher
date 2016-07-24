@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#public domain
+
+#loop through args
+for file in "$@"
+do
+	# First, seperate the PNG passed into 1024x1024 tiles
+	name=$(echo $file | cut -f 1 -d '.') #remove file ext
+	mkdir $name
+	convert $file -crop 1024x1024 -set filename:$name ./$name/%[fx:page.x/1024]-%[fx:page.y/1024] %[filename:$name].png
+
+	# Next, convert all the tiles to etc format with alpha
+	png2etc1 $name/*
+
+	# Finally, cleanup extra files we created
+	rm $name/*.png
+done

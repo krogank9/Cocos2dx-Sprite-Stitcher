@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#public domain
+
+#loop through args
+for file in "$@"
+do
+	#etc1tool expects RGB TrueColor PNG's, make sure correct colorspace:
+	mogrify -define png:color-type=2 $file
+	etc1tool $file
+done

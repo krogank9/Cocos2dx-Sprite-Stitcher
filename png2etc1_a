@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#public domain
+
+#loop through args
+for file in "$@"
+do
+	name=$(echo $file | cut -f 1 -d '.') #remove file ext
+	file_alpha_mask=$(echo ${name}_alpha.png)
+
+	convert -alpha extract $file $file_alpha_mask
+	#extracted alpha mask from file, but it's in grayscale colorspace
+	#etc1tool expects RGB TrueColor PNG's
+	#convert alpha mask to full RGB and make sure other file is too
+	mogrify -define png:color-type=2 $file_alpha_mask
+	mogrify -define png:color-type=2 $file
+
+	etc1tool $file
+	etc1tool $file_alpha_mask
+
+	rm $file_alpha_mask
+done
