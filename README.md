@@ -2,7 +2,7 @@
 
 https://www.youtube.com/watch?v=kc1TuY8kIj0
 
-##Depends:
+##Dependencies:
 Imagemagick, bash, etc1tool from android sdk
 
 ##Command line tools:
