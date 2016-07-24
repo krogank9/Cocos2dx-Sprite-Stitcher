@@ -4,10 +4,10 @@ Depends:
 Imagemagick, bash, etc1tool from android sdk
 
 #Command line tools
-1. png2etc1 converts PNG files to ETC1 format compressed (PKM) files
-2. png2stitch will convert a large png (greater than 1024x1024px) to a set of tiles, to be passed into SpriteStitcher Cocos2dx class.
-3. png2etc1_a converts PNG files to ETC1 format but with their alpha channel encoded into a seperate file.
-4. png2stitch_a will convert a large png into tiles, but each tile has its own alpha map
+1. `png2etc1` converts PNG files to ETC1 format compressed (PKM) files
+2. `png2stitch` will convert a large png (greater than 1024x1024px) to a set of tiles, to be passed into SpriteStitcher Cocos2dx class.
+3. `png2etc1_a` converts PNG files to ETC1 format but with their alpha channel encoded into a seperate file.
+4. `png2stitch_a` will convert a large png into tiles, but each tile has its own alpha map
 
 #Command line tool usage:
 1. `png2etc1 file1.png file2.png file3.png ... // outputs a .pkm for every infile`
