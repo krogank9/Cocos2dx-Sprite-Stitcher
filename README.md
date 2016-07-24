@@ -20,7 +20,7 @@ Imagemagick, bash, etc1tool from android sdk
 ##Download Cocos2d-x project files:
 1. `shaders/` folder, place this in your Cocos2d-x project's `Resources/` directory
 2. `SpriteStitch.cpp` and `SpriteStitch.h` use this class inside your Cocos2d-x project to obtain a SpriteStitch node
-3. To add a class this class into your Windows, or Linux build, edit CMakeLists.txt at the root of your project directory, then run `cmake -G "Unix Makefiles"` (or appropriate generator-name) in your `proj.linux/` or `proj.win32/`
+3. To add a class this class into your Windows or Linux build, edit CMakeLists.txt at the root of your project directory to add the files, then run `cmake -G "Unix Makefiles"` (or appropriate generator-name) in your `proj.linux/` or `proj.win32/` folder
 
 ##SpriteStitch class usage:
 1. Initialize a SpriteStitch object from the output of png2stitch:
