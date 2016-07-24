@@ -12,7 +12,7 @@ do
 	convert $file -crop 1024x1024 -set filename:$name ./$name/%[fx:page.x/1024]-%[fx:page.y/1024] %[filename:$name].png
 
 	# Next, convert all the tiles to etc format with alpha
-	png2etc1_a $name/*
+	png2etc1_a $name/*.png
 
 	# Finally, cleanup extra files we created
 	rm $name/*.png
