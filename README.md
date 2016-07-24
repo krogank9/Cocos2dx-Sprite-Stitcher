@@ -1,5 +1,7 @@
 # Cocos2dx-Sprite-Stitcher
 
+https://www.youtube.com/watch?v=kc1TuY8kIj0
+
 ##Depends:
 Imagemagick, bash, etc1tool from android sdk
 
