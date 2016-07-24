@@ -10,8 +10,8 @@ Imagemagick, bash, etc1tool from android sdk
 4. png2stitch_a will convert a large png into tiles, but each tile has its own alpha map
 
 #Command line tool usage:
-1. `png2etc1 file1.png file2.png file3.png ... // outputs a .pkm for every in file`
-2. `png2etc1_a file1.png file2.png file3.png ... // outputs a .pkm & _alpha.pkm for every in file`
+1. `png2etc1 file1.png file2.png file3.png ... // outputs a .pkm for every infile`
+2. `png2etc1_a file1.png file2.png file3.png ... // outputs a .pkm & _alpha.pkm for every infile`
 3. `png2stitch image_name.png // outputs folder image_name, containing a number of .pkm tiles <= 1024x1024 depending on image size`
 3. `png2stitch_a image_name.png // same as png_stitch but each tile also comes with an alpha map`
 
