@@ -10,7 +10,6 @@ private:
         Node* parentNode = Node::create();
         this->addChild(parentNode);
 
-        Sprite* lastSprite;
         int xPos = 0;
         int yPos = 0;
         int rowWidth, rowHeight;
